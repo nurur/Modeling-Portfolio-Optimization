@@ -1,5 +1,6 @@
-Portfolio Optimization Problem Formulation:
+This repository contains modeling portfolio optimization using AMPL programing language.
 
+Problem Formulation:
 Invest the entirety of capital K in an asset universe comprising N securities. No short-sell 
 is allowed. Denote the proportion of the capital invested in asset i by W_i. The allocation 
 policy is based on the variants of the mean-variance (Markowitz) portfolio optimization model. 
