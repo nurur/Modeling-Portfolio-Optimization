@@ -1,0 +1,29 @@
+#NURUR RAHMAN
+#portfolio_Risk_QuadraticProgramming.run
+#
+#
+reset;
+reset;
+
+
+model portfolio_Risk_QuadraticProgramming.mod;
+data  portfolio_Risk_QuadraticProgramming.dat;
+
+
+option display_eps 0.0001;
+option display_precision 4;
+option print_precision 4;
+option output_precision 4;
+option omit_zero_rows 1;
+
+
+option cplex_options 'clocktype=1' 'timelimit=360' 'timing=1';
+option solver cplex;
+solve;
+
+
+
+printf '\n';
+printf 'The allocated assets in the portfolio: \n'; display W;
+printf 'The risk of the portfolio: %8.4f', portfolioRisk;
+printf '\n';
